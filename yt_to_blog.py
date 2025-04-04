@@ -29,7 +29,7 @@ def get_transcript(url):
     return [transcript_text,img_url]
 
 
-KEY = "YOUR_API_KEY"  # Replace with your actual Google API key
+KEY =  st.secrets.API_KEY  # Replace with your actual Google API key
 genai.configure(api_key=KEY)
 
 
